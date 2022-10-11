@@ -14,6 +14,7 @@ Utility for walking and controlling tree nodes and their state.
   - [TreeController.State](docs/md/classes/TreeController.State-1.md): Handles tree state independently from Tree;
   - [TreeController.Walker](docs/md/classes/TreeController.Walker.md): Handles walking up and down independently from Tree;
 - [Docs](docs/md/modules/TreeController.md)
+- [TODO](#TODO)
 
 ## Example use case: File Selector with status indicator
 If you're building some type of file selector, you have a tree whose nodes
@@ -83,3 +84,38 @@ const propagateSyncFactory = (state) =>
 state.setState(Tree1.node_1_1, 'sync', 'downloading');
 TreeController.Walker.walkUpSyncSkipSelf(Tree1.node_1_1, tree, propagateSyncFactory(state))
 ```
+# TODO
+  - [X] tree constructor root
+  - [X] tree constructor node
+  - [X] tree constructor children
+  - [X] tree constructor fillNodesArray
+  - [X] tree constructor parent
+  - [X] Tree method defaultGetNodeFactory
+  - [X] Tree method defaultGetChildrenFactory
+  - [X] Tree method defaultFillNodesArray
+  - [X] Tree method defaultGeParentFactory
+  - [X] Walker method walkDownSyncSkipSelf
+  - [X] Walker method walkUpSyncSkipSelf
+  - [X] state constructor tree
+  - [X] state constructor keys propagation: 'none'
+  - [X] state constructor keys propagation: 'down'
+  - [X] state constructor keys propagation: 'up'
+  - [X] state constructor keys selection: 'multi'
+  - [X] state constructor keys selection: 'single'
+  - [ ] state constructor keys selection: 'single-branch'
+  - [ ] state constructor keys selection: 'multi-branch'
+  - [ ] state constructor keys selection: 'single-leaf'
+  - [ ] state constructor keys selection: 'multi-leaf'
+  - [X] state constructor keys defaultValue
+  - [X] state constructor keys values: value
+  - [X] state constructor keys values: nodes
+  - [X] state method getConfig
+  - [X] state method getStateObject
+  - [X] state method getState
+  - [X] state method setState
+  - [X] state method resetStateKey
+  - [X] state method setStateSingleSelection
+  - [X] state method setStateMultiSelection
+  - [X] state method setWalkingNone
+  - [X] state method setStateWalkingDown
+  - [X] state method setStateWalkingUp
