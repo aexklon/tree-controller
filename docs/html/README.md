@@ -1,3 +1,5 @@
+tree-controller / [Exports](modules.md)
+
 # TreeController
 Utility for walking and controlling tree nodes and their state.
 
@@ -10,10 +12,10 @@ Utility for walking and controlling tree nodes and their state.
     - ```const TreeController = require('tree-controller');```
 - Features:
   - written in typescript, exported with declaration files but contains default export for requiring;
-  - [TreeController.Tree](docs/md/classes/TreeController.Tree-1.md): class with configurable accessors for getting a node's parent and children, so you are not tied to a single shape of node;
-  - [TreeController.State](docs/md/classes/TreeController.State-1.md): Handles tree state independently from Tree;
-  - [TreeController.Walker](docs/md/classes/TreeController.Walker.md): Handles walking up and down independently from Tree;
-- [Docs](docs/md/modules/TreeController.md)
+  - [TreeController.Tree](docs/md/classes/TreeController.Tree-1.html): class with configurable accessors for getting a node's parent and children, so you are not tied to a single shape of node;
+  - [TreeController.State](docs/md/classes/TreeController.State-1.html): Handles tree state independently from Tree;
+  - [TreeController.Walker](docs/md/classes/TreeController.Walker.html): Handles walking up and down independently from Tree;
+- [Docs](docs/md/modules/TreeController.html)
 
 ## Example use case: File Selector with status indicator
 If you're building some type of file selector, you have a tree whose nodes
