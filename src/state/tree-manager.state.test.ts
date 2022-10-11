@@ -398,8 +398,6 @@ describe('State', () => {
             state.setWalkingNone(Tree1.root, 'checked', false);
             const value3 = await firstValueFrom(state.$getState(Tree1.root, 'checked'))
             expect(value3).toBe(false);
-
-            console.log({ value1, value2, value3 })
         })
     })
 

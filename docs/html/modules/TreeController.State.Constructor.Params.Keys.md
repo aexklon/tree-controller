@@ -25,4 +25,4 @@
 
 #### Defined in
 
-[state/tree-manager.state.ts:437](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L437)
+[state/tree-manager.state.ts:436](https://github.com/aexklon/tree-controller/blob/2573bbd/src/state/tree-manager.state.ts#L436)

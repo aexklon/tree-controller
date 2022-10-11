@@ -41,4 +41,4 @@ containing the tree's every nodes.
 
 #### Defined in
 
-[tree/tree-manager.tree.ts:164](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/tree/tree-manager.tree.ts#L164)
+[tree/tree-manager.tree.ts:164](https://github.com/aexklon/tree-controller/blob/2573bbd/src/tree/tree-manager.tree.ts#L164)

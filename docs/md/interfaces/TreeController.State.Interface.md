@@ -40,7 +40,7 @@ defaultState
 
 #### Defined in
 
-[state/tree-manager.state.ts:407](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L407)
+[state/tree-manager.state.ts:406](https://github.com/aexklon/tree-controller/blob/2573bbd/src/state/tree-manager.state.ts#L406)
 
 ___
 
@@ -56,7 +56,7 @@ keyConfigMap
 
 #### Defined in
 
-[state/tree-manager.state.ts:413](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L413)
+[state/tree-manager.state.ts:412](https://github.com/aexklon/tree-controller/blob/2573bbd/src/state/tree-manager.state.ts#L412)
 
 ___
 
@@ -72,7 +72,7 @@ nodeStateMap
 
 #### Defined in
 
-[state/tree-manager.state.ts:425](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L425)
+[state/tree-manager.state.ts:424](https://github.com/aexklon/tree-controller/blob/2573bbd/src/state/tree-manager.state.ts#L424)
 
 ___
 
@@ -88,7 +88,7 @@ nodeStateMap
 
 #### Defined in
 
-[state/tree-manager.state.ts:419](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L419)
+[state/tree-manager.state.ts:418](https://github.com/aexklon/tree-controller/blob/2573bbd/src/state/tree-manager.state.ts#L418)
 
 ___
 
@@ -104,4 +104,4 @@ tree
 
 #### Defined in
 
-[state/tree-manager.state.ts:400](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L400)
+[state/tree-manager.state.ts:399](https://github.com/aexklon/tree-controller/blob/2573bbd/src/state/tree-manager.state.ts#L399)

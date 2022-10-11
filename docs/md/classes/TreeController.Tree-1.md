@@ -65,7 +65,7 @@ can be provided to override default methods.
 
 #### Defined in
 
-[tree/tree-manager.tree.ts:63](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/tree/tree-manager.tree.ts#L63)
+[tree/tree-manager.tree.ts:63](https://github.com/aexklon/tree-controller/blob/2573bbd/src/tree/tree-manager.tree.ts#L63)
 
 ## Properties
 
@@ -97,7 +97,7 @@ can be provided to override default methods.
 
 #### Defined in
 
-[tree/tree-manager.tree.ts:61](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/tree/tree-manager.tree.ts#L61)
+[tree/tree-manager.tree.ts:61](https://github.com/aexklon/tree-controller/blob/2573bbd/src/tree/tree-manager.tree.ts#L61)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[tree/tree-manager.tree.ts:59](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/tree/tree-manager.tree.ts#L59)
+[tree/tree-manager.tree.ts:59](https://github.com/aexklon/tree-controller/blob/2573bbd/src/tree/tree-manager.tree.ts#L59)
 
 ___
 
@@ -149,7 +149,7 @@ and so on.
 
 #### Defined in
 
-[tree/tree-manager.tree.ts:57](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/tree/tree-manager.tree.ts#L57)
+[tree/tree-manager.tree.ts:57](https://github.com/aexklon/tree-controller/blob/2573bbd/src/tree/tree-manager.tree.ts#L57)
 
 ___
 
@@ -181,7 +181,7 @@ ___
 
 #### Defined in
 
-[tree/tree-manager.tree.ts:60](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/tree/tree-manager.tree.ts#L60)
+[tree/tree-manager.tree.ts:60](https://github.com/aexklon/tree-controller/blob/2573bbd/src/tree/tree-manager.tree.ts#L60)
 
 ___
 
@@ -199,7 +199,7 @@ ___
 
 #### Defined in
 
-[tree/tree-manager.tree.ts:56](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/tree/tree-manager.tree.ts#L56)
+[tree/tree-manager.tree.ts:56](https://github.com/aexklon/tree-controller/blob/2573bbd/src/tree/tree-manager.tree.ts#L56)
 
 ___
 
@@ -247,7 +247,7 @@ for retrieving a node's parent
 
 #### Defined in
 
-[tree/tree-manager.tree.ts:47](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/tree/tree-manager.tree.ts#L47)
+[tree/tree-manager.tree.ts:47](https://github.com/aexklon/tree-controller/blob/2573bbd/src/tree/tree-manager.tree.ts#L47)
 
 ___
 
@@ -295,7 +295,7 @@ for retrieving a node's children
 
 #### Defined in
 
-[tree/tree-manager.tree.ts:19](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/tree/tree-manager.tree.ts#L19)
+[tree/tree-manager.tree.ts:19](https://github.com/aexklon/tree-controller/blob/2573bbd/src/tree/tree-manager.tree.ts#L19)
 
 ___
 
@@ -343,7 +343,7 @@ for retrieving a node
 
 #### Defined in
 
-[tree/tree-manager.tree.ts:15](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/tree/tree-manager.tree.ts#L15)
+[tree/tree-manager.tree.ts:15](https://github.com/aexklon/tree-controller/blob/2573bbd/src/tree/tree-manager.tree.ts#L15)
 
 ## Methods
 
@@ -369,4 +369,4 @@ for retrieving a node
 
 #### Defined in
 
-[tree/tree-manager.tree.ts:24](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/tree/tree-manager.tree.ts#L24)
+[tree/tree-manager.tree.ts:24](https://github.com/aexklon/tree-controller/blob/2573bbd/src/tree/tree-manager.tree.ts#L24)

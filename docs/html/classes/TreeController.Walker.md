@@ -47,7 +47,7 @@
 
 #### Defined in
 
-[walker/tree-manager.walker.ts:4](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/walker/tree-manager.walker.ts#L4)
+[walker/tree-manager.walker.ts:4](https://github.com/aexklon/tree-controller/blob/2573bbd/src/walker/tree-manager.walker.ts#L4)
 
 ___
 
@@ -75,4 +75,4 @@ ___
 
 #### Defined in
 
-[walker/tree-manager.walker.ts:19](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/walker/tree-manager.walker.ts#L19)
+[walker/tree-manager.walker.ts:19](https://github.com/aexklon/tree-controller/blob/2573bbd/src/walker/tree-manager.walker.ts#L19)

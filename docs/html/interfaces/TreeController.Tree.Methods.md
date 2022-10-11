@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[tree/tree-manager.tree.ts:119](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/tree/tree-manager.tree.ts#L119)
+[tree/tree-manager.tree.ts:119](https://github.com/aexklon/tree-controller/blob/2573bbd/src/tree/tree-manager.tree.ts#L119)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[tree/tree-manager.tree.ts:109](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/tree/tree-manager.tree.ts#L109)
+[tree/tree-manager.tree.ts:109](https://github.com/aexklon/tree-controller/blob/2573bbd/src/tree/tree-manager.tree.ts#L109)
 
 ___
 
@@ -92,4 +92,4 @@ ___
 
 #### Defined in
 
-[tree/tree-manager.tree.ts:114](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/tree/tree-manager.tree.ts#L114)
+[tree/tree-manager.tree.ts:114](https://github.com/aexklon/tree-controller/blob/2573bbd/src/tree/tree-manager.tree.ts#L114)

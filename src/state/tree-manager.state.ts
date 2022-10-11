@@ -227,7 +227,6 @@ implements State.Interface<N, S>
      * @returns the whole node's state object
      */
     public $getStateObject(node: N): BehaviorSubject<State.Shape<S>> {
-        console.log(this.node$StateMap.has(node))
         if (!this.node$StateMap.has(node)) {
             const state = this.nodeStateMap.get(node);
             this.node$StateMap.set(node, new BehaviorSubject(state) as any);

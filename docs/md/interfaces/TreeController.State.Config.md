@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[state/tree-manager.state.ts:450](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L450)
+[state/tree-manager.state.ts:449](https://github.com/aexklon/tree-controller/blob/2573bbd/src/state/tree-manager.state.ts#L449)
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 #### Defined in
 
-[state/tree-manager.state.ts:448](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L448)
+[state/tree-manager.state.ts:447](https://github.com/aexklon/tree-controller/blob/2573bbd/src/state/tree-manager.state.ts#L447)
 
 ___
 
@@ -46,4 +46,4 @@ ___
 
 #### Defined in
 
-[state/tree-manager.state.ts:449](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L449)
+[state/tree-manager.state.ts:448](https://github.com/aexklon/tree-controller/blob/2573bbd/src/state/tree-manager.state.ts#L448)

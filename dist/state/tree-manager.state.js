@@ -195,7 +195,6 @@ class State {
      * @returns the whole node's state object
      */
     $getStateObject(node) {
-        console.log(this.node$StateMap.has(node));
         if (!this.node$StateMap.has(node)) {
             const state = this.nodeStateMap.get(node);
             this.node$StateMap.set(node, new rxjs_1.BehaviorSubject(state));

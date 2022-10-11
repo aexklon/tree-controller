@@ -35,7 +35,7 @@ and so on.
 
 #### Defined in
 
-[tree/tree-manager.tree.ts:101](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/tree/tree-manager.tree.ts#L101)
+[tree/tree-manager.tree.ts:101](https://github.com/aexklon/tree-controller/blob/2573bbd/src/tree/tree-manager.tree.ts#L101)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[tree/tree-manager.tree.ts:94](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/tree/tree-manager.tree.ts#L94)
+[tree/tree-manager.tree.ts:94](https://github.com/aexklon/tree-controller/blob/2573bbd/src/tree/tree-manager.tree.ts#L94)

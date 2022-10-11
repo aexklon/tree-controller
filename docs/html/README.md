@@ -113,8 +113,9 @@ TreeController.Walker.walkUpSyncSkipSelf(Tree1.node_1_1, tree, propagateSyncFact
   - [X] state constructor keys values: nodes
   - [X] state method getConfig
   - [X] state method getStateObject
+  - [X] state method $getStateObject
   - [X] state method getState
-  - [ ] state method $getstate
+  - [X] state method $getstate
   - [X] state method setState
   - [X] state method resetStateKey
   - [X] state method setStateSingleSelection

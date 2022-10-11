@@ -60,7 +60,7 @@ for retrieving a node's children
 
 #### Defined in
 
-[tree/tree-manager.tree.ts:152](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/tree/tree-manager.tree.ts#L152)
+[tree/tree-manager.tree.ts:152](https://github.com/aexklon/tree-controller/blob/2573bbd/src/tree/tree-manager.tree.ts#L152)
 
 ___
 
@@ -104,7 +104,7 @@ for retrieving a node
 
 #### Defined in
 
-[tree/tree-manager.tree.ts:132](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/tree/tree-manager.tree.ts#L132)
+[tree/tree-manager.tree.ts:132](https://github.com/aexklon/tree-controller/blob/2573bbd/src/tree/tree-manager.tree.ts#L132)
 
 ___
 
@@ -148,4 +148,4 @@ for retrieving a node's parent
 
 #### Defined in
 
-[tree/tree-manager.tree.ts:142](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/tree/tree-manager.tree.ts#L142)
+[tree/tree-manager.tree.ts:142](https://github.com/aexklon/tree-controller/blob/2573bbd/src/tree/tree-manager.tree.ts#L142)

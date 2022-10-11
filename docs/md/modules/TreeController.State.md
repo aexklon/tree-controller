@@ -34,4 +34,4 @@
 
 #### Defined in
 
-[state/tree-manager.state.ts:393](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L393)
+[state/tree-manager.state.ts:392](https://github.com/aexklon/tree-controller/blob/2573bbd/src/state/tree-manager.state.ts#L392)
