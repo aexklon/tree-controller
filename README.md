@@ -11,7 +11,7 @@ Utility for walking and controlling tree nodes and their state.
 - Features:
   - written in typescript, exported with declaration files but contains default export for requiring;
   - [TreeController.Tree](docs/md/classes/TreeController.Tree-1.md): class with configurable accessors for getting a node's parent and children, so you are not tied to a single shape of node;
-  - [TreeController.State](docs/md/classes/TreeController.State-1.md): Handles tree state independently from Tree;
+  - [TreeController.State](docs/md/classes/TreeController.State-1.md): Handles tree state independently from Tree and optionally can stream via [RxJS](https://rxjs.dev);
   - [TreeController.Walker](docs/md/classes/TreeController.Walker.md): Handles walking up and down independently from Tree;
 - [Docs](docs/md/modules/TreeController.md)
 - [TODO](#TODO)
@@ -112,6 +112,7 @@ TreeController.Walker.walkUpSyncSkipSelf(Tree1.node_1_1, tree, propagateSyncFact
   - [X] state method getConfig
   - [X] state method getStateObject
   - [X] state method getState
+  - [ ] state method $getstate
   - [X] state method setState
   - [X] state method resetStateKey
   - [X] state method setStateSingleSelection

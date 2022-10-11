@@ -21,6 +21,7 @@
 
 - [defaultState](TreeController.State.Interface.md#defaultstate)
 - [keyConfigMap](TreeController.State.Interface.md#keyconfigmap)
+- [node$StateMap](TreeController.State.Interface.md#node$statemap)
 - [nodeStateMap](TreeController.State.Interface.md#nodestatemap)
 - [tree](TreeController.State.Interface.md#tree)
 
@@ -39,7 +40,7 @@ defaultState
 
 #### Defined in
 
-[state/tree-manager.state.ts:376](https://github.com/aexklon/tree-controller/blob/cc5f0c3/src/state/tree-manager.state.ts#L376)
+[state/tree-manager.state.ts:407](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L407)
 
 ___
 
@@ -55,7 +56,23 @@ keyConfigMap
 
 #### Defined in
 
-[state/tree-manager.state.ts:382](https://github.com/aexklon/tree-controller/blob/cc5f0c3/src/state/tree-manager.state.ts#L382)
+[state/tree-manager.state.ts:413](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L413)
+
+___
+
+### node$StateMap
+
+• `Readonly` **node$StateMap**: `Map`<`N`, `BehaviorSubject`<[`Shape`](../modules/TreeController.State.md#shape)<`S`\>\>\>
+
+Maps every tree node's to an Observable that emits its state object
+
+**`Field`**
+
+nodeStateMap
+
+#### Defined in
+
+[state/tree-manager.state.ts:425](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L425)
 
 ___
 
@@ -71,7 +88,7 @@ nodeStateMap
 
 #### Defined in
 
-[state/tree-manager.state.ts:388](https://github.com/aexklon/tree-controller/blob/cc5f0c3/src/state/tree-manager.state.ts#L388)
+[state/tree-manager.state.ts:419](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L419)
 
 ___
 
@@ -87,4 +104,4 @@ tree
 
 #### Defined in
 
-[state/tree-manager.state.ts:369](https://github.com/aexklon/tree-controller/blob/cc5f0c3/src/state/tree-manager.state.ts#L369)
+[state/tree-manager.state.ts:400](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L400)

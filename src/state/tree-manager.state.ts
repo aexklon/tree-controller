@@ -1,5 +1,6 @@
 import { Tree } from '../tree/tree-manager.tree';
 import { Walker } from '../walker/tree-manager.walker';
+import { Observable, BehaviorSubject, map } from 'rxjs';
 
 /**
  * `State` contains holds each tree node's state object. For example,
@@ -29,6 +30,7 @@ implements State.Interface<N, S>
     public readonly tree: State.Interface<N, S>['tree'];
     public readonly defaultState: State.Interface<N, S>['defaultState'];
     public readonly nodeStateMap: State.Interface<N, S>['nodeStateMap'];
+    public readonly node$StateMap: State.Interface<N, S>['node$StateMap'];
     public readonly keyConfigMap: State.Interface<N, S>['keyConfigMap'];
 
     /**
@@ -161,6 +163,7 @@ implements State.Interface<N, S>
         // As soon as the defaultState has been built, each node state can be
         // initialized using it. Given a tree has been provided.
         this.nodeStateMap = new Map();
+        this.node$StateMap = new Map(); // this maps does not needs to be initialized with values
         if(tree) this.tree = tree;
         if (this.tree) {
             for (const node of this.tree.nodes) {
@@ -216,6 +219,34 @@ implements State.Interface<N, S>
      */
     public getStateObject(node: N): State.Shape<S>|null|undefined {
         return this.nodeStateMap.get(node);
+    }
+
+    /**
+     * @method $getStateObject gets a node state object as an Observable
+     * @param node tree's node
+     * @returns the whole node's state object
+     */
+    public $getStateObject(node: N): BehaviorSubject<State.Shape<S>> {
+        console.log(this.node$StateMap.has(node))
+        if (!this.node$StateMap.has(node)) {
+            const state = this.nodeStateMap.get(node);
+            this.node$StateMap.set(node, new BehaviorSubject(state) as any);
+        }
+        return this.node$StateMap.get(node) as BehaviorSubject<State.Shape<S>>;
+    }
+
+    /**
+     * @method $getState gets the value of a node state object's property key
+     * as an Observable
+     * @param node tree's node
+     * @param key node's state object property key
+     * @returns the value for that node state object's property key
+     */
+    public $getState(node: N, key: Extract<keyof State.Shape<S>, string>): Observable<any> {
+        return this.$getStateObject(node)
+            .pipe(
+                map(state => state && state.hasOwnProperty(key) ? state[key] : undefined)
+            );
     }
 
     /**
@@ -386,6 +417,12 @@ export namespace State
          * @field nodeStateMap
          */
         readonly nodeStateMap: Map<N, State.Shape<S>>;
+
+        /**
+         * Maps every tree node's to an Observable that emits its state object
+         * @field nodeStateMap
+         */
+        readonly node$StateMap: Map<N, BehaviorSubject<State.Shape<S>>>;
     }
 
     

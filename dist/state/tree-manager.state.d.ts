@@ -1,4 +1,5 @@
 import { Tree } from '../tree/tree-manager.tree';
+import { Observable, BehaviorSubject } from 'rxjs';
 /**
  * `State` contains holds each tree node's state object. For example,
  * for a file explorer tree with checkboxes, this class could be used to
@@ -19,6 +20,7 @@ export declare class State<N = any, S = any> implements State.Interface<N, S> {
     readonly tree: State.Interface<N, S>['tree'];
     readonly defaultState: State.Interface<N, S>['defaultState'];
     readonly nodeStateMap: State.Interface<N, S>['nodeStateMap'];
+    readonly node$StateMap: State.Interface<N, S>['node$StateMap'];
     readonly keyConfigMap: State.Interface<N, S>['keyConfigMap'];
     /**
      * # Examples
@@ -132,6 +134,20 @@ export declare class State<N = any, S = any> implements State.Interface<N, S> {
      */
     getStateObject(node: N): State.Shape<S> | null | undefined;
     /**
+     * @method $getStateObject gets a node state object as an Observable
+     * @param node tree's node
+     * @returns the whole node's state object
+     */
+    $getStateObject(node: N): BehaviorSubject<State.Shape<S>>;
+    /**
+     * @method $getState gets the value of a node state object's property key
+     * as an Observable
+     * @param node tree's node
+     * @param key node's state object property key
+     * @returns the value for that node state object's property key
+     */
+    $getState(node: N, key: Extract<keyof State.Shape<S>, string>): Observable<any>;
+    /**
      * @method getState gets the value of a node state object's property key
      * @param node tree's node
      * @param key node's state object property key
@@ -235,6 +251,11 @@ export declare namespace State {
          * @field nodeStateMap
          */
         readonly nodeStateMap: Map<N, State.Shape<S>>;
+        /**
+         * Maps every tree node's to an Observable that emits its state object
+         * @field nodeStateMap
+         */
+        readonly node$StateMap: Map<N, BehaviorSubject<State.Shape<S>>>;
     }
     namespace Constructor {
         namespace Params {

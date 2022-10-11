@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.State = void 0;
 const tree_manager_walker_1 = require("../walker/tree-manager.walker");
+const rxjs_1 = require("rxjs");
 /**
  * `State` contains holds each tree node's state object. For example,
  * for a file explorer tree with checkboxes, this class could be used to
@@ -136,6 +137,7 @@ class State {
         // As soon as the defaultState has been built, each node state can be
         // initialized using it. Given a tree has been provided.
         this.nodeStateMap = new Map();
+        this.node$StateMap = new Map(); // this maps does not needs to be initialized with values
         if (tree)
             this.tree = tree;
         if (this.tree) {
@@ -186,6 +188,30 @@ class State {
      */
     getStateObject(node) {
         return this.nodeStateMap.get(node);
+    }
+    /**
+     * @method $getStateObject gets a node state object as an Observable
+     * @param node tree's node
+     * @returns the whole node's state object
+     */
+    $getStateObject(node) {
+        console.log(this.node$StateMap.has(node));
+        if (!this.node$StateMap.has(node)) {
+            const state = this.nodeStateMap.get(node);
+            this.node$StateMap.set(node, new rxjs_1.BehaviorSubject(state));
+        }
+        return this.node$StateMap.get(node);
+    }
+    /**
+     * @method $getState gets the value of a node state object's property key
+     * as an Observable
+     * @param node tree's node
+     * @param key node's state object property key
+     * @returns the value for that node state object's property key
+     */
+    $getState(node, key) {
+        return this.$getStateObject(node)
+            .pipe((0, rxjs_1.map)(state => state && state.hasOwnProperty(key) ? state[key] : undefined));
     }
     /**
      * @method getState gets the value of a node state object's property key

@@ -32,12 +32,15 @@ force single or multi selection mode
 
 - [defaultState](TreeController.State-1.md#defaultstate)
 - [keyConfigMap](TreeController.State-1.md#keyconfigmap)
+- [node$StateMap](TreeController.State-1.md#node$statemap)
 - [nodeStateMap](TreeController.State-1.md#nodestatemap)
 - [tree](TreeController.State-1.md#tree)
 - [configDefault](TreeController.State-1.md#configdefault)
 
 ### Methods
 
+- [$getState](TreeController.State-1.md#$getstate)
+- [$getStateObject](TreeController.State-1.md#$getstateobject)
 - [\_assertState](TreeController.State-1.md#_assertstate)
 - [getConfig](TreeController.State-1.md#getconfig)
 - [getState](TreeController.State-1.md#getstate)
@@ -172,7 +175,7 @@ const state = new TreeController.State<any, S>(
 
 #### Defined in
 
-[state/tree-manager.state.ts:130](https://github.com/aexklon/tree-controller/blob/cc5f0c3/src/state/tree-manager.state.ts#L130)
+[state/tree-manager.state.ts:132](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L132)
 
 ## Properties
 
@@ -193,7 +196,7 @@ defaultState
 
 #### Defined in
 
-[state/tree-manager.state.ts:30](https://github.com/aexklon/tree-controller/blob/cc5f0c3/src/state/tree-manager.state.ts#L30)
+[state/tree-manager.state.ts:31](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L31)
 
 ___
 
@@ -213,7 +216,27 @@ keyConfigMap
 
 #### Defined in
 
-[state/tree-manager.state.ts:32](https://github.com/aexklon/tree-controller/blob/cc5f0c3/src/state/tree-manager.state.ts#L32)
+[state/tree-manager.state.ts:34](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L34)
+
+___
+
+### node$StateMap
+
+• `Readonly` **node$StateMap**: `Map`<`N`, `BehaviorSubject`<[`Shape`](../modules/TreeController.State.md#shape)<`S`\>\>\>
+
+Maps every tree node's to an Observable that emits its state object
+
+**`Field`**
+
+nodeStateMap
+
+#### Implementation of
+
+[Interface](../interfaces/TreeController.State.Interface.md).[node$StateMap](../interfaces/TreeController.State.Interface.md#node$statemap)
+
+#### Defined in
+
+[state/tree-manager.state.ts:33](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L33)
 
 ___
 
@@ -233,7 +256,7 @@ nodeStateMap
 
 #### Defined in
 
-[state/tree-manager.state.ts:31](https://github.com/aexklon/tree-controller/blob/cc5f0c3/src/state/tree-manager.state.ts#L31)
+[state/tree-manager.state.ts:32](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L32)
 
 ___
 
@@ -253,7 +276,7 @@ tree
 
 #### Defined in
 
-[state/tree-manager.state.ts:29](https://github.com/aexklon/tree-controller/blob/cc5f0c3/src/state/tree-manager.state.ts#L29)
+[state/tree-manager.state.ts:30](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L30)
 
 ___
 
@@ -270,9 +293,63 @@ configDefault
 
 #### Defined in
 
-[state/tree-manager.state.ts:23](https://github.com/aexklon/tree-controller/blob/cc5f0c3/src/state/tree-manager.state.ts#L23)
+[state/tree-manager.state.ts:24](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L24)
 
 ## Methods
+
+### $getState
+
+▸ **$getState**(`node`, `key`): `Observable`<`any`\>
+
+**`Method`**
+
+$getState gets the value of a node state object's property key
+as an Observable
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `node` | `N` | tree's node |
+| `key` | `Extract`<keyof [`Shape`](../modules/TreeController.State.md#shape)<`S`\>, `string`\> | node's state object property key |
+
+#### Returns
+
+`Observable`<`any`\>
+
+the value for that node state object's property key
+
+#### Defined in
+
+[state/tree-manager.state.ts:245](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L245)
+
+___
+
+### $getStateObject
+
+▸ **$getStateObject**(`node`): `BehaviorSubject`<[`Shape`](../modules/TreeController.State.md#shape)<`S`\>\>
+
+**`Method`**
+
+$getStateObject gets a node state object as an Observable
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `node` | `N` | tree's node |
+
+#### Returns
+
+`BehaviorSubject`<[`Shape`](../modules/TreeController.State.md#shape)<`S`\>\>
+
+the whole node's state object
+
+#### Defined in
+
+[state/tree-manager.state.ts:229](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L229)
+
+___
 
 ### \_assertState
 
@@ -291,7 +368,7 @@ configDefault
 
 #### Defined in
 
-[state/tree-manager.state.ts:194](https://github.com/aexklon/tree-controller/blob/cc5f0c3/src/state/tree-manager.state.ts#L194)
+[state/tree-manager.state.ts:197](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L197)
 
 ___
 
@@ -318,7 +395,7 @@ the configuration object for the provided key
 
 #### Defined in
 
-[state/tree-manager.state.ts:206](https://github.com/aexklon/tree-controller/blob/cc5f0c3/src/state/tree-manager.state.ts#L206)
+[state/tree-manager.state.ts:209](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L209)
 
 ___
 
@@ -345,7 +422,7 @@ the value for that node state object's property key
 
 #### Defined in
 
-[state/tree-manager.state.ts:227](https://github.com/aexklon/tree-controller/blob/cc5f0c3/src/state/tree-manager.state.ts#L227)
+[state/tree-manager.state.ts:258](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L258)
 
 ___
 
@@ -371,7 +448,7 @@ the whole node's state object
 
 #### Defined in
 
-[state/tree-manager.state.ts:217](https://github.com/aexklon/tree-controller/blob/cc5f0c3/src/state/tree-manager.state.ts#L217)
+[state/tree-manager.state.ts:220](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L220)
 
 ___
 
@@ -397,7 +474,7 @@ from this classes static property configDefault.defaultValue.
 
 #### Defined in
 
-[state/tree-manager.state.ts:265](https://github.com/aexklon/tree-controller/blob/cc5f0c3/src/state/tree-manager.state.ts#L265)
+[state/tree-manager.state.ts:296](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L296)
 
 ___
 
@@ -434,7 +511,7 @@ on that key's configuration for propagation does on of the following:
 
 #### Defined in
 
-[state/tree-manager.state.ts:250](https://github.com/aexklon/tree-controller/blob/cc5f0c3/src/state/tree-manager.state.ts#L250)
+[state/tree-manager.state.ts:281](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L281)
 
 ___
 
@@ -465,7 +542,7 @@ on that key's configuration for propagation does on of the following:
 
 #### Defined in
 
-[state/tree-manager.state.ts:296](https://github.com/aexklon/tree-controller/blob/cc5f0c3/src/state/tree-manager.state.ts#L296)
+[state/tree-manager.state.ts:327](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L327)
 
 ___
 
@@ -493,7 +570,7 @@ other node's state for that key to their configuration's defaultValue.
 
 #### Defined in
 
-[state/tree-manager.state.ts:280](https://github.com/aexklon/tree-controller/blob/cc5f0c3/src/state/tree-manager.state.ts#L280)
+[state/tree-manager.state.ts:311](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L311)
 
 ___
 
@@ -521,7 +598,7 @@ to that node's every children, and their children and so on.
 
 #### Defined in
 
-[state/tree-manager.state.ts:329](https://github.com/aexklon/tree-controller/blob/cc5f0c3/src/state/tree-manager.state.ts#L329)
+[state/tree-manager.state.ts:360](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L360)
 
 ___
 
@@ -549,7 +626,7 @@ to that node's parent, and their parent and so on.
 
 #### Defined in
 
-[state/tree-manager.state.ts:348](https://github.com/aexklon/tree-controller/blob/cc5f0c3/src/state/tree-manager.state.ts#L348)
+[state/tree-manager.state.ts:379](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L379)
 
 ___
 
@@ -576,4 +653,4 @@ it the provided value for the provided property key.
 
 #### Defined in
 
-[state/tree-manager.state.ts:316](https://github.com/aexklon/tree-controller/blob/cc5f0c3/src/state/tree-manager.state.ts#L316)
+[state/tree-manager.state.ts:347](https://github.com/aexklon/tree-controller/blob/cb5a1ff/src/state/tree-manager.state.ts#L347)

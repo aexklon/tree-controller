@@ -1,3 +1,4 @@
+import { firstValueFrom } from 'rxjs';
 import { TreeController } from '../index';
 import { Tree1 } from '../test-util';
 
@@ -379,6 +380,27 @@ describe('State', () => {
             expect(state.nodeStateMap.get(Tree1.node_2_2)?.checked).toBe(true);
         })
 
+    })
+
+    describe('$getState', () => {
+
+        test('emits', async () => {
+            const tree = new TreeController.Tree(Tree1.root);
+            const state = new TreeController.State<any, S>(tree);
+
+            const value1 = await firstValueFrom(state.$getState(Tree1.root, 'checked'))
+            expect(value1).toBe(undefined);
+
+            state.setWalkingNone(Tree1.root, 'checked', true);
+            const value2 = await firstValueFrom(state.$getState(Tree1.root, 'checked'))
+            expect(value2).toBe(true);
+
+            state.setWalkingNone(Tree1.root, 'checked', false);
+            const value3 = await firstValueFrom(state.$getState(Tree1.root, 'checked'))
+            expect(value3).toBe(false);
+
+            console.log({ value1, value2, value3 })
+        })
     })
 
 })
